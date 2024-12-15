@@ -1,0 +1,15 @@
+{
+  "name": "image-based-searching-api",
+  "version": "1.0.0",
+  "description": "allow searching for similar images by entering an image as input",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oussama irhil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
