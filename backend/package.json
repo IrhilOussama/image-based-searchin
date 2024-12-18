@@ -1,15 +1,12 @@
 {
-  "name": "image-based-searching-api",
+  "name": "ai-based-searching-backend",
   "version": "1.0.0",
-  "description": "allow searching for similar images by entering an image as input",
+  "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "oussama irhil",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.21.2"
-  }
+  "license": "ISC"
 }

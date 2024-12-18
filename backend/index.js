@@ -1,12 +1,10 @@
-const express = require("express");
-const path = require("path");
-const app = express();
 
-app.use("/images", express.static(path.join(__dirname, "public/images")));
+const PORT = 5000;
+const http = require("http");
 
-app.get("/", (req, res) => {
-    res.send("hello");
+const server = http.createServer((req, res) => {
+    res.write("hello");
+    res.end();
 })
 
-app.listen(8000, _ => console.log("server is listening at port 8000"));
-
+server.listen(() => console.log("server is running on port ", PORT));
