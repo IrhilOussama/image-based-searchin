@@ -72,7 +72,8 @@ for i, filename in enumerate(filenames):
     
     # Construct the structure as needed
     similar_images = [
-        f"{PROTOCOLE}://{SERVER_IP}:{SERVER_PORT}/api/images/{os.path.basename(similar_image)}" 
+        # f"{PROTOCOLE}://{SERVER_IP}:{SERVER_PORT}/api/images/{os.path.basename(similar_image)}" 
+        f"{os.path.basename(similar_image)}" 
         for similar_image, _ in cluster_similarities
     ]
     
