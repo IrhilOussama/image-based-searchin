@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
 
         if (similarImage) {
             res.statusCode = 200;
-            res.end(JSON.stringify(similarImage.similar_images));
+            res.end(JSON.stringify((similarImage.similar_images)));
         } else {
             res.statusCode = 404;
             res.end(JSON.stringify({ error: 'Image not found' }));
