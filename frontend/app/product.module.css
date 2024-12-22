@@ -1,0 +1,47 @@
+
+
+.imgCon{
+    display: block;
+    width: 300px;
+    margin: 100px auto;
+    animation: movement 2s ease-in infinite alternate;
+}
+.imgCon .myImg{
+    /* border: 2px solid grey; */
+    width: 100%;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.122);
+    animation: rotatingImg 2s ease alternate infinite;
+    transition: 0.9s;
+}
+.imgCon:hover .myImg{
+    transform: perspective(600px) rotateX(10deg) rotateY(180deg) scale(0.9);
+}
+
+@keyframes movement {
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.content{
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 70%;
+    margin: 100px auto;
+}
+.content .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.content .box:hover{
+    transform: scale(1.05);
+}
+.content .box .boxImg{
+    width: 100%;
+}
+

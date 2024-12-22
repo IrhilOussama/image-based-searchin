@@ -1,0 +1,22 @@
+
+.header{
+    background-color:dimgray;
+}
+.header .list{
+    display: flex;
+    justify-content: center;
+}
+.header .list .link{
+    list-style: none;
+    color: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header .list .link:hover{
+    color: rgb(200, 255, 0);
+}

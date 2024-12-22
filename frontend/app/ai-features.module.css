@@ -1,0 +1,80 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+  
+  .algorithmSection {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .algorithmDescription {
+    line-height: 1.6;
+    color: #34495e;
+  }
+  
+  .codeSnippet {
+    background-color: #f1f4f8;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .imageClassificationFlow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .flowStep {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .flowStep:hover {
+    transform: scale(1.05);
+    background-color: #3498db;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .imageClassificationFlow {
+      flex-direction: column;
+    }
+  
+    .flowStep {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
